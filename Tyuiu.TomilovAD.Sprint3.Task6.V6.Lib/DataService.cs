@@ -11,7 +11,7 @@ namespace Tyuiu.TomilovAD.Sprint3.Task6.V6.Lib
             
             for (x = startValue; x <= stopValue; x++)
             {
-                for (int d = 10; d <= x; d++)
+                for (int d = 11; d <= x; d++)
                 {
                     if (x % d == 0)
                     {
