@@ -12,7 +12,7 @@ namespace Tyuiu.TomilovAD.Sprint3.Task0.V1.Lib
                 int i;
                 for (i = startValue; i <= stopValue; i++)
                 {
-                    sumSeries = sumSeries + (Math.Pow(value, 2) + i) + 1;
+                    sumSeries = sumSeries + ((Math.Pow(value, 2) * i) + 1);
                 }
                 return Math.Round(sumSeries, 3);
             }
