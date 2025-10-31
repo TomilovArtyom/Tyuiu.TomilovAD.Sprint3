@@ -9,10 +9,10 @@ namespace Tyuiu.TomilovAD.Sprint3.Task1.V19.Lib
             double multseries = 1;
             while (startValue <= stopValue)
             {
-                multseries = multseries * ((Math.Cos(value*(Math.PI/180))) + (startValue / 4));
+                multseries = multseries * ((Math.Cos(value)) + (startValue / Convert.ToDouble(4)));
                 startValue++;
             }
-            return multseries;
+            return Math.Round(multseries, 3);
         }
     }
 }
