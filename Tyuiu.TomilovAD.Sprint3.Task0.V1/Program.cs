@@ -2,7 +2,8 @@
 
 DataService ds = new DataService();
 
+int value = 4;
 int startvalue = 1;
 int endvalue = 15;
 
-Console.WriteLine(ds.GetSumSeries(startvalue, endvalue));
+Console.WriteLine(ds.GetSumSeries(value, startvalue, endvalue));
