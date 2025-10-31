@@ -13,17 +13,9 @@ namespace Tyuiu.TomilovAD.Sprint3.Task7.V14.Lib
             int count = 0;
             for (int x = startValue; x <= stopValue; x++)
             {
-                if (x == 0)
-                {
-                    Array[count] = 0;
-                    count++;
-                }
-                else
-                {
-                    y = Math.Round((2 * x - 4 + ((2 * x - 1) / (Math.Sin(x) + 1))), 2);
-                    Array[count] = y;
-                    count++;
-                }
+                y = Math.Round((2 * x - 4 + ((2 * x - 1) / (Math.Sin(x) + 1))), 2);
+                Array[count] = y;
+                count++;
             }
             return Array;
         }
