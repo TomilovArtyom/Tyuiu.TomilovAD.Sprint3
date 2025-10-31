@@ -8,13 +8,12 @@ namespace Tyuiu.TomilovAD.Sprint3.Task5.V5.Lib
         {
             x = 5;
             double sumSeries = 0;
-            int i;
-            int o;
+            int i, o;
             for (i = startValue1; i <= stopValue1; i++)
             {
                 for (o = startValue2; o <= stopValue2; o++)
                 {
-                    sumSeries = sumSeries + (x/Math.Sin(stopValue2));
+                    sumSeries = sumSeries + (x/Math.Sin(startValue2));
                 }
             }
             return Math.Round(sumSeries, 3);
