@@ -6,13 +6,13 @@ namespace Tyuiu.TomilovAD.Sprint3.Task1.V19.Lib
     {
         public double GetMultiplySeries(int value, int startValue, int stopValue)
         {
-            double multseries = 0;
+            double multseries = 1;
             while (startValue <= stopValue)
             {
-                multseries = multseries + (Math.Cos(value) + startValue / 4);
+                multseries = multseries * ((Math.Cos(value*(Math.PI/180))) + (startValue / 4));
                 startValue++;
             }
-            return Math.Round(multseries, 3);
+            return multseries;
         }
     }
 }
